@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>RISD Wintersession Web Design 2017 | Section 2</title>
+        <meta name="description" content="Compiled student sork for Web Design (GRAPH-3271-01) at RISD, Wintersession 2016">
+        <meta name="viewport" content="width=device-width">
+        <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <h1>Web Design</h1>
+                <h3>RISD Wintersession 2017 | Student work section 2 </h3>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <div class="students">
+                        <a href="/aaron/" target="_blank">Aaron</a>
+                        <a href="/ananya/" target="_blank">Ananya</a>
+                        <a href="/Brandon-Olsen/" target="_blank">Brandon</a>
+                        <a href="/elizachen/" target="_blank">Eliza</a>
+                        <a href="/EmilyMahar/" target="_blank">Emily</a>
+                        <a href="/gcha/" target="_blank">G Cha</a>
+                        <a href="/jessie/" target="_blank">Jessie</a>
+                        <a href="/JennLivermore/" target="_blank">Jenn</a>
+                        <a href="/joshuashao/" target="_blank">Josh</a>
+                        <a href="/lauren/" target="_blank">Lauren</a>
+                        <a href="/maddy/" target="_blank">Maddy</a>
+                        <a href="/mithra/" target="_blank">Mithra</a>
+                        <a href="/ShaneDaly/" target="_blank">Shane</a>
+                        <a href="/xioespana/" target="_blank">Xio</a>
+                        <a href="/yolanda/" target="_blank">Yolanda</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <p>
+                    <a href="http://risdweb17.motsuka.com/" target="_blank">Web Design (GRAPH-3271-02)</a> | 
+                    Wintersession at the <a href="http://www.risd.edu/" target="_blank">Rhode Island School of Design</a> | <a href="https://github.com/risdweb17" target="_blank">GitHub</a>
+                </p>
+                <p>
+                    JAN 4 2016 — FEB 7 2017
+                </p>
+            </div> 
+        </footer>
+        <script>
+        var color="";
+        function getRandomColor() {
+                    color = '#';
+                    var letters = '0123456789ABCDEF'.split('');
+                    for (var i = 0; i < 6; i++ ) {
+                        color += letters[Math.floor(Math.random() * 16)];
+                    }
+                    return color;
+            }
+        
+        $(".students a").hover(function(){
+            getRandomColor();
+            $(this).css("background-color", color);
+            }, function(){$(this).removeAttr('style');
+        });
+
+           
+           
+        </script>
+    </body>
+
+</html>

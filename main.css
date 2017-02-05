@@ -59,7 +59,7 @@ section{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .students {
@@ -96,4 +96,11 @@ footer {
 footer .container {
 	border-top: 2px dotted #cccccc;
 	padding: 1em 2em;
+}
+
+@media screen and (max-width: 450px){
+	header, footer{
+		position: static;
+	}
+
 }
